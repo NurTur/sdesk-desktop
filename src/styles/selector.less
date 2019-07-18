@@ -1,0 +1,112 @@
+#title
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 600;
+    color:black;
+    border:none;
+    background: white;
+    display: inline-block;
+   
+#selectBox {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 200;
+    color:grey;
+    border-radius: 1px;
+   
+}    
+.selectBox
+{
+    height: 100%;
+    width: 200px;
+}
+#checkBox
+{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 200;
+    color:grey;
+   
+    .firstBox
+    {
+        
+        input {
+            vertical-align: middle;
+            margin: 2px;
+        }
+    }
+    .secondBox {
+        margin-left: 3px;
+        input {
+            vertical-align: middle;
+            margin: 2px;
+        }
+    }
+}
+
+}
+
+
+
+.viewDatePicker { 
+    [type="date"] {
+        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+      }
+      [type="date"]::-webkit-inner-spin-button {
+        display: none;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      }
+      
+     
+      input {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 3px 5px;
+        box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+        width: 190px;
+      }  
+  }
+
+.dropdownMenu
+{
+    height:420px;
+    overflow-y: scroll;
+}
+.dropdownRadio
+{
+    overflow: none;
+    height: 100px;
+    text-align: center;
+}
+.dropdownSearch
+{
+    height:420px;
+    width:280px;
+    overflow: scroll;
+}
+.dropdownSearchExactly
+{
+    overflow: none;
+    height:65px;
+    width: 280px;
+    text-align: center;
+}
+
+.dropdownDate1
+{
+    height:65px;
+    width: 238px;
+    .viewDatePicker();
+}
+.datepickerMenu
+{
+    height:120px;
+    width: 280px;
+    .viewDatePicker();
+  
+}

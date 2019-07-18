@@ -1,0 +1,167 @@
+.boxParams { 
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;  
+      padding: 3px;
+  }
+
+#showTicketsInfo
+{
+  max-width: 1600px;
+  width: 90vw; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-weight: 600;
+  color:black;
+
+
+  .modalHeader
+  {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;  
+  }
+    
+  .modalBody1 {
+    min-height: 450px;
+    height: 76vh;
+    width: 100%;
+    background: rgb(236, 236, 236);
+
+    
+
+  display: grid;
+  grid-template-columns: 40% 25% 1fr;
+  grid-template-rows: 37% 28% 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "customer vendor vendor"
+  "customer warrantyFlag serviceType"
+  "customer payCustomer payCustomer";
+
+  
+
+    .customer
+    {
+      grid-area: customer; 
+      background: white;
+      .customerBox
+      {
+      width: 100%; 
+      height: 95%; 
+      .boxParams();
+      }
+    }
+    .vendor
+    {
+      grid-area: vendor; 
+      background: white;
+      .vendorBox
+      {
+      width: 100%; 
+      height: 86%; 
+      .boxParams();
+      }
+    }
+    .warrantyFlag
+    {
+      grid-area: warrantyFlag; 
+      background: white;
+      .warrantyFlagBox
+      {
+      width: 100%; 
+      height: 85%; 
+      .boxParams();
+      }
+    }
+
+    .serviceType
+    {
+      grid-area: serviceType; 
+      background: white;
+      .serviceTypeBox
+      {
+      width: 100%; 
+      height: 100%; 
+      .boxParams();
+      }
+    }
+
+    .payCustomer
+    {
+      grid-area: payCustomer; 
+      background: white;
+      .payCustomerBox
+      {
+      width: 100%; 
+      height: 86%; 
+      .boxParams();
+      }
+    }
+  }
+
+  .modalBody2 {
+    min-height: 450px;
+    height: 76vh;
+    width: 100%;
+    background: rgb(236, 236, 236);
+
+    
+
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: 50% 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "customer vendor"
+  "customer description";
+
+  
+
+    .customer
+    {
+      grid-area: customer; 
+      background: white;
+      .customerBox
+      {
+      width: 100%; 
+      height: 95%; 
+      .boxParams();
+      }
+    }
+    .vendor
+    {
+      grid-area: vendor; 
+      background: white;
+      .vendorBox
+      {
+      width: 100%; 
+      height: 86%; 
+      .boxParams();
+      }
+    }
+    .description
+    {
+      grid-area: description; 
+      background: white;
+      .descriptionBox
+      {
+      width: 100%; 
+      height: 60%; 
+      .boxParams();
+      }
+    }
+
+    
+  }
+}
+
+.fontMiddle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 200;
+  color:black;
+}
